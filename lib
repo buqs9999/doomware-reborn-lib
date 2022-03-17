@@ -30,13 +30,13 @@ end
 
 function Library:CreateWindow(title, color)
     title = title or "Bracket Lib V2"
-    color = color and Library:GetColor(color) or Color3.fromRGB(19, 119, 255)
+    color = color and Library:GetColor(color) or Color3.fromRGB(138,43,226)
 
     -- Window Main
     local WinTypes = {}
     local WindowDragging, SliderDragging, ColorPickerDragging = false, false, false
     local oldcolor = nil
-    local keybind = "RightControl"
+    local keybind = "V"
     local cancbind = false
 
     -- Window Instances
