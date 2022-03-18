@@ -1,4 +1,3 @@
-
 local library = { 
 	flags = { }, 
 	items = { } 
