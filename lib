@@ -1767,7 +1767,7 @@ function library:CreateWindow(name, size, hidebutton)
 					dropdown.BlackOutline.BackgroundTransparency = 0
 				end)
 				
-	    tab:CreateConfigSystem(side)
+	    function() tab:CreateConfigSystem(side)
             local configSystem = { }
 
             configSystem.configFolder = window.name .. "/" .. tostring(game.PlaceId)
