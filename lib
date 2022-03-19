@@ -34,7 +34,7 @@ library.theme = {
 
 function library:CreateWatermark(name)
 	local watermark = { }
-	watermark.Visible = true
+	watermark.Visible = false
 
 	local gamename = marketplaceservice:GetProductInfo(game.PlaceId).Name
 	watermark.main = Instance.new("ScreenGui", coregui)
