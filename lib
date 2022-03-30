@@ -24,7 +24,7 @@ library.theme = {
     font = Enum.Font.Code,
     background = "rbxassetid://5553946656",
     tilesize = 90,
-    cursor = false,
+    cursor = true,
     cursorimg = "https://t0.rbxcdn.com/42f66da98c40252ee151326a82aab51f",
     backgroundcolor = Color3.fromRGB(20, 20, 20),
     tabstextcolor = Color3.fromRGB(240, 240, 240),
@@ -75,7 +75,7 @@ function library:CreateWatermark(name, position)
     local gamename = marketplaceservice:GetProductInfo(game.PlaceId).Name
     local watermark = { }
     watermark.Visible = true
-    watermark.text = "Balls" .. name:gsub("{game}", gamename):gsub("{fps}", "0 FPS") .. " "
+    watermark.text = " " .. name:gsub("{game}", gamename):gsub("{fps}", "0 FPS") .. " "
 
     watermark.main = Instance.new("ScreenGui", coregui)
     watermark.main.Name = "Watermark"
