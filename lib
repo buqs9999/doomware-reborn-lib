@@ -33,7 +33,7 @@ library.theme = {
     accentcolor2 = Color3.fromRGB(255, 105, 180),
     outlinecolor = Color3.fromRGB(0, 0, 0),
     outlinecolor2 = Color3.fromRGB(0, 0, 0),
-    sectorcolor = Color3.fromRGB(0, 0, 0),
+    sectorcolor = Color3.fromRGB(30, 30, 30),
     toptextcolor = Color3.fromRGB(255, 255, 255),
     topheight = 48,
     topcolor = Color3.fromRGB(30, 30, 30),
@@ -173,7 +173,7 @@ function library:CreateWatermark(name, position)
                 startTime = currentTime
 
                 if fps ~= oldfps then
-                    watermark.label.Text = " " .. name:gsub("{game}", gamename):gsub("{fps}", fps .. " FPS") .. " "
+                    watermark.label.Text = "Doomware" .. name:gsub("{game}", gamename):gsub("{fps}", fps .. " FPS") .. " "
         
                     watermark.label.Size = UDim2.new(0, watermark.label.TextBounds.X+10, 0, 25)
                     watermark.mainbar.Size = UDim2.new(0, watermark.label.TextBounds.X, 0, 25)
